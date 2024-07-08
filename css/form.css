@@ -1,103 +1,56 @@
-#contacto {
-    background-color: #dadcdf;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 18%;
-    padding-right: 18%;
-    
-}
-
-#contacto h2 {
-    margin-bottom: 15px;
-}
-
-#formulario-contacto {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
-}
-
-
-#contacto {
-    background-color: #dadcdf;
+/* Estilos específicos del formulario de contacto */
+.contact-form {
+    background: #fff; /* Color de fondo por defecto */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 500px; /* Máximo ancho para evitar que se extienda demasiado */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.dark-mode .contact-form {
+    background: #222222; /* Color de fondo en modo noche */
+    color: #fff; /* Color del texto en modo noche */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra en modo noche */
+}
+
+.contact-form h2 {
     margin-bottom: 20px;
-    color: #333; 
 }
 
-#contacto h2 {
+.form-group {
     margin-bottom: 15px;
 }
 
-#formulario-contacto {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #666; 
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 22px); /* Ajuste para compensar el padding de 10px en cada lado */
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+button {
+    background-color: #d5ff1c;
+    color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #e7eb17;
 }
 
-
-.dark-mode #contacto {
-    background-color: #333; 
-    color: #fff;
-}
-
-.dark-mode label {
-    color: #999; 
-}
-
-.dark-mode input[type="text"],
-.dark-mode input[type="email"],
-.dark-mode input[type="tel"],
-.dark-mode textarea {
-    background-color: #444; 
-    color: #ddd; 
-}
-
-.dark-mode button[type="submit"] {
-    background-color: #0056b3;
+#response-message {
+    margin-top: 20px;
+    font-weight: bold;
 }
