@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black; /* Color de texto predeterminado */
+    background-color: #f0f2f5;
+}
+
+
+body.dark-mode {
+    color: white; /* Cambia el color del texto en modo oscuro */
+    background-color: #222; /* Cambia el color de fondo en modo oscuro */
+}
+
+/* COLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOR */
+
+body::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color del "pulgón" (la parte que se puede arrastrar) */
+    border-radius: 4px; /* Borde redondeado del "pulgón" */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Color del "pulgón" al pasar el ratón por encima */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; /* Color de la pista (la parte no arrastrable) */
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: transparent; /* Color de la esquina de la barra de desplazamiento */
+}
+
+
+/* Estilos de la barra de desplazamiento específicos de WebKit */
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la ventana */
+    right: 20px; /* Ajusta la distancia desde el borde derecho de la ventana */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.dark-mode-toggle img {
+    width: 55px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 55px;
+    transition: all 0.3s ease; /* Transición suave para la imagen del modo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode #logoNav img {
+    filter: invert(1); /* Invierte el color del logo en modo oscuro */
+}
+
+.dark-mode .menu a {
+    color: white; /* Cambia el color del texto de los enlaces en modo oscuro */
+}
+
+.dark-mode .prohead {
+    background-color: #222; /* Cambia el color de fondo del encabezado en modo oscuro */
+}
+
+.dark-mode .container {
+    background-color: #222; /* Cambia el color de fondo del contenedor en modo oscuro */
+}

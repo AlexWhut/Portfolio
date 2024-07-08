@@ -1,0 +1,64 @@
+#proyectos {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    padding-top: 50px;
+    
+}
+
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.proyecto {
+    width: calc(20% - 20px); /* 20% de ancho y 20px de margen entre proyectos */
+    margin-bottom: 60px; /* Mantener el margen inferior */
+    margin-left: 20px; /* Agregar margen izquierdo */
+    margin-right: 20px; /* Agregar margen derecho */
+}
+
+
+.proyecto a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.proyecto img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    margin-bottom: 10px;
+    border-radius: 40px; /* Añadir bordes redondeados */
+}
+
+.proyecto p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.proyecto:hover img {
+    opacity: 0.8; /* Reducir la opacidad al pasar el ratón sobre la imagen */
+}
+
+.dark-mode #proyectos {
+    background-color: #333; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color de texto en modo oscuro */
+}
+
+.dark-mode .proyecto a {
+    color: #fff; /* Color de texto en modo oscuro */
+}
+
+
+@media (max-width: 768px) {
+    .proyecto {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+}

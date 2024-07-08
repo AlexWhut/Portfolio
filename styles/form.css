@@ -1,0 +1,106 @@
+#contacto {
+    background-color: #dadcdf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-left: 18%;
+    padding-right: 18%;
+    
+}
+
+#contacto h2 {
+    margin-bottom: 15px;
+    
+}
+
+#formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Estilos generales */
+/* Estilos generales */
+#contacto {
+    background-color: #dadcdf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333; /* Color de texto en modo claro */
+}
+
+#contacto h2 {
+    margin-bottom: 15px;
+}
+
+#formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666; /* Color de texto en modo claro */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Color de fondo en modo claro */
+    color: #333; /* Color de texto en modo claro */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para modo oscuro */
+.dark-mode #contacto {
+    background-color: #333; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color de texto en modo oscuro */
+}
+
+.dark-mode label {
+    color: #999; /* Color de texto en modo oscuro */
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="tel"],
+.dark-mode textarea {
+    background-color: #444; /* Color de fondo en modo oscuro */
+    color: #ddd; /* Color de texto en modo oscuro */
+}
+
+.dark-mode button[type="submit"] {
+    background-color: #0056b3;
+}

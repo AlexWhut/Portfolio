@@ -1,0 +1,79 @@
+#sobreMi {
+    width: 100%; /* Ancho del 70% */
+    margin: 0; /* Centrado horizontal */
+    padding-top: 50px; /* Ajusta el relleno según sea necesario */
+    box-sizing: border-box; /* Incluye el relleno en el cálculo del tamaño */
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.sobre-mi-section {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.sobre-mi-content {
+    width: 100%; /* Ocupa el 70% del ancho disponible */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px 0; /* Ajusta el espacio arriba y abajo */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.sobre-mi-image {
+    flex: 0 0 50%; /* La imagen ocupa el 50% del ancho del contenido */
+    max-width: 80%; /* Ancho máximo de la imagen */
+    border-radius: 10px; /* Borde redondeado */
+    margin-right: 20px; /* Espaciado a la derecha de la imagen */
+}
+
+
+.sobre-mi-image img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener las proporciones */
+    object-fit: cover; /* La imagen se recorta para ajustarse al contenedor */
+    display: block; /* Elimina el espacio adicional en la parte inferior de la imagen */
+}
+
+.sobre-mi-text {
+    flex: 0 0 50%; /* El texto ocupa el 50% del ancho del contenido */
+    max-width: 100%; /* Ancho máximo del texto */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #sobreMi {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        justify-content: space-between;
+
+    }
+    .sobre-mi-content {
+        width: 100%; /* Ocupa el 70% del ancho disponible */
+        max-width: 100%;
+        margin: 0 auto; /* Centra horizontalmente */
+        padding: 20px 0; /* Ajusta el espacio arriba y abajo */
+        box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+        display: flex; /* Utiliza flexbox */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    }
+    .sobre-mi-image {
+        max-width: 90%;
+        flex: 0 0 70; /* La imagen ocupa el 50% del ancho del contenido */
+        border-radius: 10px; /* Borde redondeado */
+        margin-right: 0px; /* Espaciado a la derecha de la imagen */
+        padding-right: 0px;
+        
+    }
+}

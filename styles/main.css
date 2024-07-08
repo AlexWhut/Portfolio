@@ -1,0 +1,97 @@
+/* Estilos para el contenido dentro del main */
+
+
+.main-content {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 0; /* Ajusta el espaciado entre las secciones */
+    margin: 0;
+    
+}
+
+
+
+.main-content h2 {
+    margin-bottom: 20px; /* Espaciado adicional debajo de cada título */
+}
+
+
+
+
+#redes {
+    width: 70%; /* Ancho del 70% */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px 0; /* Ajusta el relleno según sea necesario */
+    box-sizing: border-box; /* Incluye el relleno en el cálculo del tamaño */
+    display: flex; /* Cambia el comportamiento del contenedor a flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.social-link {
+    margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+
+.social-link:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.social-link img {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+/* Estilos para enlaces en modo día */
+#redes a {
+    text-decoration: none;
+    color: black; /* Color de texto predeterminado en modo día */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 0 10px; /* Espaciado entre enlaces */
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+/* Estilos para enlaces en modo noche */
+
+
+
+.dark-mode #redes a {
+    color: white; /* Color de texto en modo noche */
+}
+
+#redes a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+    cursor: pointer;
+}
+
+#redes svg {
+    width: 20px; /* Tamaño del SVG */
+    height: auto;
+    margin-right: 5px; /* Espaciado entre el SVG y el texto */
+}
+
+.floating-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.back-to-top {
+    color: #f0f2f5;
+    text-decoration: none;
+}
+
+.floating-bubble:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+

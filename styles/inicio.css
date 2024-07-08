@@ -1,0 +1,13 @@
+.svg-container {
+    width: 65%; /* Establece el ancho al 70% del contenedor padre */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-top: 8%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .svg-container {
+        padding-top: 120px;
+        width: 80%;
+        margin: 0 auto;
+}}

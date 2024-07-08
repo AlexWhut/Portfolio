@@ -1,0 +1,27 @@
+/* Estilos para el modo celular */
+
+@media only screen and (max-width: 800px) {
+    /* Agrega tus estilos para el menú de hamburguesas aquí */
+    .navv-left,
+    .navv-right {
+        display: none; /* Oculta los menús de navegación */
+    }
+
+    .logo-container {
+        order: 1; /* Mueve el logo hacia la izquierda */
+    }
+
+    .dropdown-btn {
+        order: 2; /* Mueve el botón de hamburguesas al centro */
+    }
+
+    .menu.active {
+        display: block; /* Muestra el menú de hamburguesas cuando está activo */
+    }
+
+    .mobile-menu.active {
+        /* Estilos para mostrar el menú en modo celular */
+        display: block;
+    }
+
+}

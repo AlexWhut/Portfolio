@@ -1,0 +1,27 @@
+
+
+@media only screen and (max-width: 800px) {
+   
+    .navv-left,
+    .navv-right {
+        display: none;
+    }
+
+    .logo-container {
+        order: 1; 
+    }
+
+    .dropdown-btn {
+        order: 2; 
+    }
+
+    .menu.active {
+        display: block; 
+    }
+
+    .mobile-menu.active {
+        
+        display: block;
+    }
+
+}

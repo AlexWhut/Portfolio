@@ -1,0 +1,97 @@
+
+
+
+.main-content {
+    text-align: center; 
+    padding: 0; 
+    margin: 0;
+    
+}
+
+
+
+.main-content h2 {
+    margin-bottom: 20px; 
+}
+
+
+
+
+#redes {
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.social-link {
+    margin: 0 10px;
+}
+
+
+.social-link:last-child {
+    margin-right: 0; 
+}
+
+.social-link img {
+    width: 20px; 
+    height: auto;
+}
+
+
+#redes a {
+    text-decoration: none;
+    color: black; 
+    font-size: 16px; 
+    margin: 0 10px; 
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+
+
+
+
+.dark-mode #redes a {
+    color: white; 
+}
+
+#redes a:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+#redes svg {
+    width: 20px;
+    height: auto;
+    margin-right: 5px; 
+}
+
+.floating-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.back-to-top {
+    color: #f0f2f5;
+    text-decoration: none;
+}
+
+.floating-bubble:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
