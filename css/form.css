@@ -38,7 +38,7 @@
 }
 
 button {
-    background-color: #d5ff1c;
+    background-color: #f7e018;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #e7eb17;
+    background-color: #cdba10;
 }
 
 #response-message {
