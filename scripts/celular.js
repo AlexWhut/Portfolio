@@ -7,3 +7,9 @@ function toggleMenu() {
     var btn = document.querySelector(".dropdown-btn");
     btn.classList.toggle("change");
 }
+
+
+document.getElementById('hamburgerToggle').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('hidden');
+});

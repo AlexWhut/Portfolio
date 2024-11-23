@@ -92,3 +92,25 @@
     background-color: #0056b3;
     cursor: pointer;
 }
+
+/* Estilos generales para la sección sobre mí */
+.sobre-mi-section {
+    display: flex;
+    flex-direction: row; /* Elementos en fila por defecto */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sobre-mi-image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sobre-mi-text {
+    max-width: 600px;
+}
+
