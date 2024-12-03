@@ -1,4 +1,8 @@
 /* Estilos específicos del formulario de contacto */
+#contacto {
+    padding-bottom: 40px;
+}
+
 .contact-form {
     background: #fff; /* Color de fondo por defecto */
     padding: 20px;
