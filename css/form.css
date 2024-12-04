@@ -41,8 +41,8 @@
     box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
-button {
-    background-color: #f7e018;
+#submit-form {
+    background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -51,8 +51,24 @@ button {
 }
 
 button:hover {
-    background-color: #cdba10;
+    background-color: #2c2c2c;
 }
+
+/* Estilos para el modo oscuro */
+body.dark-mode #submit-form {
+    background-color: #ffffff;  /* Color de fondo oscuro */
+    color: rgb(0, 0, 0);  /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover en modo oscuro */
+body.dark-mode  #submit-form:hover {
+    background-color: #d3d3d3;  /* Color más claro para el hover */
+}
+
 
 #response-message {
     margin-top: 20px;
