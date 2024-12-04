@@ -1,6 +1,5 @@
 #proyectos {
     padding: 20px;
-    background-color: #f9f9f9;
     max-width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -49,7 +48,7 @@
 }
 
 .dark-mode #proyectos {
-    background-color: #333;
+    background-color: #222222;
     color: #fff; 
 }
 
