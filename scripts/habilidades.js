@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     let position = 0;
-    let speed = 1;
+    let speed = 1.5;
   
     
   

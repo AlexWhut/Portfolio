@@ -31,6 +31,15 @@
     position: relative; 
 }
 
+.logo img {
+    max-width: 150px; /* Limita el ancho máximo a 100px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que las imágenes respeten el contenedor */
+    margin: 0 auto; /* Centra las imágenes dentro del contenedor .logo */
+}
+
+
+
 .logo::after {
     content: attr(data-level);
     position: absolute;
