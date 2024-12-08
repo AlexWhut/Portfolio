@@ -1,0 +1,136 @@
+.prohead {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo-container img {
+    width: 75px;
+    height: auto;
+}
+
+.navv {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu li:hover a,
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu li:hover a {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+
+/* mobile */
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: #f7e018;
+    margin: 4px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    color: #222222;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu.hidden {
+    display: none;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu a:hover {
+    color: #fffb08;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}

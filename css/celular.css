@@ -1,0 +1,54 @@
+@media only screen and (max-width: 800px) {
+    .navv-left,
+    .navv-right {
+        display: none;
+    }
+
+    .logo-container {
+        order: 1; 
+    }
+
+    .dropdown-btn {
+        order: 2; 
+    }
+
+    .menu.active {
+        display: block; 
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    #redes,
+    .sobre-mi-image { 
+        display: none !important; /* Añadir !important para asegurarse de que no sea sobrescrito */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Centrado del texto y ajuste de tamaño de fuente */
+    #redes {
+        display: none !important; /* Añadir !important aquí también */
+    }
+
+    .sobre-mi-text {
+        text-align: center;
+        font-size: 14px; /* Reducir tamaño de fuente en móvil */
+        margin-bottom: 20px;
+    }
+
+    /* Imagen debajo del texto en dispositivos móviles */
+    .sobre-mi-image {
+        display: none !important; /* Añadir display none !important */
+    }
+
+    /* Asegurarte que el contenedor tenga un buen espaciado */
+    .sobre-mi-content {
+        display: block;
+        text-align: center;
+    }
+    .contact-form {
+      width: 60%;
+    }
+}

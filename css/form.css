@@ -1,0 +1,75 @@
+/* Estilos específicos del formulario de contacto */
+#contacto {
+    padding-bottom: 20px; /* Reducción del espacio inferior */
+}
+
+.contact-form {
+    background: #f5f5f5; /* Color de fondo por defecto */
+    padding: 15px; /* Reducción del padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajuste para un ancho más compacto */
+    max-width: 500px; /* Máximo ancho para evitar que se extienda demasiado */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.dark-mode .contact-form {
+    background: #222222; /* Color de fondo en modo noche */
+    color: #fff; /* Color del texto en modo noche */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra en modo noche */
+}
+
+.contact-form h2 {
+    margin-bottom: 15px; /* Reducción del margen */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reducción del margen */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px); /* Ajuste para compensar el padding */
+    padding: 8px; /* Reducción del padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+#submit-form {
+    background-color: black;
+    color: white;
+    padding: 8px 16px; /* Reducción del padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode #submit-form {
+    background-color: #f0f2f5;  /* Color de fondo oscuro */
+    color: rgb(0, 0, 0);  /* Texto blanco */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover en modo oscuro */
+body.dark-mode  #submit-form:hover {
+    background-color: #d3d3d3;  /* Color más claro para el hover */
+}
+
+#response-message {
+    margin-top: 15px; /* Reducción del margen superior */
+    font-weight: bold;
+}

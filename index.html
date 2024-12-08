@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Alex</title>
+    <link rel="icon" type="image/svg+xml" href="Logos/logoMain200p.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap');
+    </style>
+</head>
+<body>
+    <header class="prohead">
+        <div class="container">
+            <nav class="navv navv-left d-none d-md-block">
+                <ul class="menu" id="menu-left">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <a href="#" id="logoNav"><img src="Logos/logoMain200pB.svg" alt="Logo"></a>
+            </div>
+            <nav class="navv navv-right d-none d-md-block">
+                <ul class="menu" id="menu-right">
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button id="hamburgerToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="mobileMenu" class="mobile-menu hidden">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobreMi">Sobre mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="dark-mode-toggle" class="dark-mode-toggle">
+            <img id="mode-icon" src="Logos/dia.svg" alt="Modo Claro">
+        </div>
+        <div>
+            <a href="https://wa.link/zcae9n" target="_blank" id="whatsapp-button">
+                <img src="Logos/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>
+
+        <section id="inicio">
+            <div class="inicioF">
+                <div class="content">
+                    <div class="svg-container">
+                        <img id="svgImageMain" src="Logos/FullSV.svg" alt="SVG">
+                    </div>
+                </div>
+            </div>
+            <div id="redes">
+                <a href="https://www.instagram.com/alex.whut/" target="_blank" class="social-link">INSTAGRAM
+                    <img src="Logos/flecha.svg" alt="Instagram">
+                </a>
+                <a href="https://wa.link/zcae9n" target="_blank" class="social-link">WHATSAPP
+                    <img src="Logos/flecha.svg" alt="wa">
+                </a>
+                <a href="https://www.linkedin.com/in/alex-morantes-013869283/" target="_blank" class="social-link">LINKEDIN
+                    <img src="Logos/flecha.svg" alt="linkedin">
+                </a>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section id="sobreMi" class="sobre-mi-section">
+                <div class="sobre-mi-content">
+                    <div class="sobre-mi-image">
+                        <img src="Imgs/yoo.png" alt="Mi Foto" class="sobre-mi-image">
+                    </div>
+                    <div class="sobre-mi-text">
+                        <h2>Sobre Mí</h2>
+                        <p>Soy diseñador UX/UI y gráfico con experiencia en la creación de interfaces intuitivas y atractivas, y en la gestión de proyectos de diseño gráfico. Cuento con un sólido dominio de herramientas de diseño digital y una amplia experiencia en diversos procesos de impresión y producción gráfica.<br><br>
+                            Actualmente me encuentro aprendiendo programación deseando enfocarme en el desarrollo front-end.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos">
+                <div class="proyectos-container">
+                    <div class="proyecto">
+                        <a href="https://www.behance.net/gallery/203019691/Portafolio-2024" id="a" target="_blank">
+                            <img src="Imgs/behance.png" alt="Proyecto 1">
+                            <p>Portafolio Behance</p>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="link_proyecto_2"  id="a" target="_blank">
+                            <img src="Imgs/wait.png" alt="Proyecto 2">
+                            <p>Pendiente</p>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="link_proyecto_3" id="a" target="_blank">
+                            <img src="Imgs/wait.png" alt="Proyecto 3">
+                            <p>Pendiente</p>
+                        </a>
+                    </div>
+                </div>
+            </section>            
+            <br>
+            <section id="habilidades">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="logo" data-skill="Git"><img src="Imgs/git.png" alt="Git"></div>
+                        <div class="logo" data-skill="GitHub"><img src="Imgs/githubca.png" alt="GitHub"></div>
+                        <div class="logo" data-skill="Java"><img src="Imgs/Java.png" alt="Java"></div>
+                        <div class="logo" data-skill="JavaScript"><img src="Imgs/js.png" alt="JavaScript"></div>
+                        <div class="logo" data-skill="MySQL"><img src="Imgs/mysql.png" alt="MySQL"></div>
+                        <div class="logo" data-skill="React"><img src="Imgs/react.png" alt="React"></div>
+                        <div class="logo" data-skill="HTML"><img src="Imgs/html.png" alt="HTML"></div>
+                        <div class="logo" data-skill="CSS"><img src="Imgs/css.png" alt="CSS"></div>
+                        <div class="logo" data-skill="Figma"><img src="Imgs/figma.png" alt="Figma"></div>
+                        <div class="logo" data-skill="Photoshop"><img src="Imgs/ps.png" alt="Adobe Photoshop"></div>
+                        <div class="logo" data-skill="Illustrator"><img src="Imgs/ai.png" alt="Adobe Illustrator"></div>
+                        <div class="logo" data-skill="Premiere"><img src="Imgs/pr.png" alt="Adobe Premiere"></div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="contacto">
+                <div class="main-content">
+                    <form id="contact-form" class="contact-form" action="#">
+                        <h2>Formulario de Contacto</h2>
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cell">Celular:</label>
+                            <input type="text" id="cell" name="cell" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button id="submit-form" type="submit">Enviar</button>
+                        <p id="response-message"></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h4>Contacto</h4>
+                    <p>Email: <a href="mailto:whutcontactoes@gmail.com">whutcontactoes@gmail.com</a></p>
+                    <p>Teléfono: +34 657 22 58 51</p>
+                </div>
+                <div class="about-company">
+                    <h4>Sobre mí</h4>
+                    <p>
+                        Soy Alex, diseñador UX/UI y técnico en sistemas especializado en crear experiencias digitales atractivas e intuitivas. Combino creatividad y conocimientos técnicos para ofrecer soluciones efectivas.
+                    </p>
+                </div>
+                <div class="social-media">
+                    <h4>Sígueme</h4>
+                    <a href="https://www.linkedin.com/in/alex-morantes-013869283/" id="a" target="_blank" rel="noopener noreferrer">
+                        <img src="Imgs/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/AlexWhut" id="a" target="_blank" rel="noopener noreferrer">
+                        <img src="Imgs/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2024 Alexander Morantes</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/celular.js"></script>
+    <script src="scripts/habilidades.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/correo.js"></script>
+</body>
+</html>

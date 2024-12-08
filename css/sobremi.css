@@ -1,0 +1,73 @@
+#sobreMi {
+    width: 100%; 
+    margin: 0; 
+    padding-top: 50px; 
+    box-sizing: border-box; 
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 50px;
+}
+
+.sobre-mi-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Cambiado para centrar verticalmente */
+    flex-wrap: wrap;
+}
+
+.sobre-mi-content {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Cambiado para centrar verticalmente */
+}
+
+.sobre-mi-image {
+    flex: 0 0 45%; /* Cambiado para ajustar el espacio de la imagen */
+    max-width: 45%; /* Asegura que no ocupe más del 45% */
+    border-radius: 10px; 
+    margin-right: 5%; /* Añadido para separar texto e imagen */
+}
+
+.sobre-mi-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.sobre-mi-text {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+    text-align: left; /* Cambiado a izquierda para una mejor lectura */
+    padding-top: 0; /* Eliminado para alinear verticalmente */
+    padding-bottom: 0;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 800px) {
+    #sobreMi {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+    .sobre-mi-content {
+        flex-direction: column; /* Cambiado para apilar los elementos */
+        align-items: center;
+    }
+    .sobre-mi-image {
+        max-width: 90%;
+        flex: 0 0 auto; 
+        margin-right: 0; 
+        margin-bottom: 20px; /* Separación de texto en pantallas pequeñas */
+    }
+    .sobre-mi-text {
+        max-width: 100%; 
+        text-align: center; /* Centrado para pantallas pequeñas */
+    }
+}

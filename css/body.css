@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black; 
+    background-color: #fafafa;
+}
+
+
+body.dark-mode {
+    color: white; 
+    background-color: #222; 
+}
+
+/* COLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOR */
+
+body::-webkit-scrollbar {
+    width: 8px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: transparent; 
+}
+
+
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999; 
+}
+
+.dark-mode-toggle img {
+    width: 55px; 
+    height: 55px;
+    transition: all 0.3s ease; 
+    cursor: pointer; 
+}
+
+.dark-mode #logoNav img {
+    filter: invert(1);
+}
+
+.dark-mode .menu a {
+    color: white; 
+}
+
+.dark-mode .prohead {
+    background-color: #222; 
+}
+
+.dark-mode .container {
+    background-color: #222; 
+}

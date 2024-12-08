@@ -1,0 +1,66 @@
+#proyectos {
+    padding: 20px;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center; /* Centra el contenido del contenedor principal */
+}
+
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.proyecto {
+    width: calc(20% - 20px); 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna para alinear imagen y texto verticalmente */
+    align-items: center; /* Centra horizontalmente imagen y texto */
+    text-align: center; /* Centra texto también */
+}
+
+.proyecto a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #333;
+    outline: none;
+}
+
+.proyecto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+
+.proyecto p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.proyecto:hover img {
+    opacity: 0.8;
+}
+
+.dark-mode #proyectos {
+    background-color: #222222;
+    color: #fff; 
+}
+
+.dark-mode .proyecto a {
+    color: #fff; 
+}
+
+@media (max-width: 800px) {
+    .proyecto {
+        width: 80%; 
+    }
+}
