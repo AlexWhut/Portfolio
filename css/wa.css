@@ -1,0 +1,20 @@
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2000;
+    background-color: #25D366;
+    width: 44px; /* Define un ancho fijo */
+    height: 44px; /* Define un alto fijo igual al ancho */
+    border-radius: 50%;
+    display: flex; /* Centra el contenido */
+    justify-content: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#whatsapp-button img {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
