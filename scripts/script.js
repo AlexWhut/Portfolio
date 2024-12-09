@@ -52,8 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     logoLink.addEventListener('click', function(event) {
         event.preventDefault(); // Evita que el enlace recargue la página
-        const targetPosition = document.getElementById('inicio').offsetTop - headerHeight; // Calcula la posición del inicio
-        smoothScrollTo(targetPosition, 1000); // Llama a la función de desplazamiento suave
+        if (!isAnimating) { // Solo permite la animación si no está en curso
+            const targetPosition = document.getElementById('inicio').offsetTop - headerHeight; // Calcula la posición del inicio
+            smoothScrollTo(targetPosition, 1000); // Llama a la función de desplazamiento suave
+        }
     });
 
     // Desplazamiento suave para otros enlaces del nav
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (currentTime < duration) {
                 setTimeout(animateScroll, increment);
             } else {
-                isAnimating = false; 
+                isAnimating = false; // Permite nuevas animaciones
             }
         }
 
