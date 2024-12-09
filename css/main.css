@@ -56,38 +56,6 @@
     margin-right: 5px;
 }
 
-#whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
-    z-index: 2000; /* Asegúrate de que sea menor que el z-index del botón flotante */
-    background-color: #25D366;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-#whatsapp-button img {
-    width: 30px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-}
-
-.floating-bubble {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; /* Posiciona el botón flotante en la esquina inferior derecha */
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    z-index: 3000; /* Asegúrate de que sea mayor que el z-index del botón de WhatsApp */
-    background-color: #007bff;
-    color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
 .floating-bubble:hover {
     background-color: #0056b3;
     cursor: pointer;

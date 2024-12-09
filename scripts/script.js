@@ -6,11 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const redesLinks = document.querySelectorAll('#redes img'); 
     let isAnimating = false; 
 
-    
     const lightModeSVG = 'Logos/FullSV.svg';
     const darkModeSVG = 'Logos/FullSVW.svg';
 
-
+    // Modo oscuro
     modeToggle.addEventListener('click', function() {
         body.classList.toggle('dark-mode');
 
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             modeIcon.src = 'Logos/noche.svg'; 
             svgImageMain.src = darkModeSVG; 
 
-          
             redesLinks.forEach(link => {
                 link.src = 'Logos/flechanoche.svg';
             });
@@ -27,75 +25,53 @@ document.addEventListener('DOMContentLoaded', function() {
             modeIcon.src = 'Logos/dia.svg'; 
             svgImageMain.src = lightModeSVG;
 
-            
             redesLinks.forEach(link => {
                 link.src = 'Logos/flecha.svg';
             });
         }
 
-       
         const isDarkMode = body.classList.contains('dark-mode');
         localStorage.setItem('dark-mode', isDarkMode);
     });
 
-    
+    // Cargar el modo oscuro desde localStorage
     const isDarkMode = localStorage.getItem('dark-mode') === 'true';
     if (isDarkMode) {
         body.classList.add('dark-mode');
-
-       
         modeIcon.src = 'Logos/noche.svg';
         svgImageMain.src = darkModeSVG;
 
-       
         redesLinks.forEach(link => {
             link.src = 'Logos/flechanoche.svg';
         });
     }
 
-
-  
-    const inicioLink = document.querySelector('nav a[href="#inicio"]');
-    if (inicioLink) {
-        inicioLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            if (!isAnimating) {
-                const targetPosition = 0;
-                smoothScrollTo(targetPosition, 1000);
-            }
-        });
-    }
-
-   
+    // Desplazamiento suave al hacer clic en el logo
+    const logoLink = document.getElementById('logoNav');
     const headerHeight = document.querySelector('header').offsetHeight;
-    const conocenosTitle = document.getElementById('conocenoss');
 
-    
+    logoLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que el enlace recargue la página
+        const targetPosition = document.getElementById('inicio').offsetTop - headerHeight; // Calcula la posición del inicio
+        smoothScrollTo(targetPosition, 1000); // Llama a la función de desplazamiento suave
+    });
+
+    // Desplazamiento suave para otros enlaces del nav
     const links = document.querySelectorAll('nav a');
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             if (!isAnimating) { 
                 const href = this.getAttribute('href');
+                const targetElement = document.getElementById(href.substring(1));
+                const targetPosition = targetElement.offsetTop - headerHeight;
 
-                if (href === '#inicio') {
-                    const targetPosition = 0;
-                    smoothScrollTo(targetPosition, 1000);
-                } else {
-                    const targetId = href.substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    const targetPosition = targetElement.offsetTop - headerHeight;
-
-                    smoothScrollTo(targetPosition, 1000);
-                }
-
-                
-                conocenosTitle.style.marginTop = `${headerHeight}px`; 
+                smoothScrollTo(targetPosition, 1000);
             }
         });
     });
 
-    
+    // Función de desplazamiento suave
     function smoothScrollTo(to, duration) {
         isAnimating = true; 
         const start = window.pageYOffset;
@@ -124,5 +100,3 @@ document.addEventListener('DOMContentLoaded', function() {
         animateScroll();
     }
 });
-
-
