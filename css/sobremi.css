@@ -43,7 +43,9 @@
     flex: 0 0 50%; 
     max-width: 50%; 
     box-sizing: border-box; 
-    text-align: left; /* Cambiado a izquierda para una mejor lectura */
+    text-align: center; /* Cambiado a izquierda para una mejor lectura */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
     padding-top: 0; /* Eliminado para alinear verticalmente */
     padding-bottom: 0;
 }
